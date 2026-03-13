@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="header_container">
+                <img src="/assets/logo/gocourse_logo.png" alt="">
+
+                <ul class="nav nav_center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Topics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New Releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Best Sellers</a>
+                    </li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" class="header_search_input" placeholder="Search books...">
+
+                    <button class="search_btn" onclick="toggleSearch()">
+                        <i class="bi bi-search"></i>
+                    </button>
+                    <a href="" class="publish_btn">
+                        <i class="bi bi-vector-pen"></i> Publish
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro_container">
+            <div class="intro_text">
+                <h1>The Definitive <br>Library  for <span class="gradient_text">Tech <br> Builders</span></h1>
+                <h4>
+                    Discover, read, and publish the best technical books — <br>
+                    from system design to machine learning. Available as e-books
+                    <br>and print.
+                </h4>
+            </div>
+
+            <!-- <div class="intro_container_design">
+
+            </div> -->
+
+            <div class="intro_container_btns">
+    
+                <div class="intro_btns_left">
+                    <div class="browse_collections">
+                        <button type="button" class="btn btn-primary btn-lg browse_collections_btn">
+                            Browse collections 
+                            <span><i class="bi bi-arrow-right"></i></span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-lg become_authorbtn">Become an author</button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="intro_glassy_cards_right">
+
+                <div class="glass_card card1">
+                    <i class="bi bi-terminal"></i>
+                    <div class="code_line"></div>
+                    <div class="code_line small"></div>
+                </div>
+
+                <div class="glass_card card2">
+                    <i class="bi bi-braces"></i>
+                    <div class="code_line"></div>
+                    <div class="code_line small"></div>
+                </div>
+
+                <div class="glass_card card3">
+                    <i class="bi bi-code-slash"></i>
+                    <div class="code_line"></div>
+                    <div class="code_line small"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+  
+        <div class="recommended">
+            <h1>Recommended for you</h1>
+            <h5>Hand-picked by our editors</h5>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+                    <div class="col" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/data_applications.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Designing Data-Intensive Applications</h5>
+                                <p class="card-text">Martin Kleppmann <br>
+                                    The big ideas behind reliable, scalable, and maintainable...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/rust.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Rust Programming Language</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/python.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Deep Learning with Python</h5>
+                                <p class="card-text">François Chollet <br>
+                                    Practical deep learning concepts using Keras and
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-aos="flip-left" data-aos-delay="400">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/react_design.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React Design Patterns</h5>
+                                <p class="card-text">Carlos Santana <br>
+                                    Build scalable React applications with proven
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="latest_releases">
+            <h1>Latest Releases</h1>
+            <h5>Fresh off the press</h5>
+            <div class="container text-center">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+                    <div class="col" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/rust.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Rust Programming Language</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/flutter.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flutter in Practice</h5>
+                                <p class="card-text">Eric Windmill <br>
+                                    Build beautiful, natively compiled mobile apps from a...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="flip-left" data-aos-delay="300">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/kubernetes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kubernetes in Action</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col" data-aos="flip-left" data-aos-delay="400">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/react_design.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React Design Patterns</h5>
+                                <p class="card-text">Carlos Santana <br>
+                                    Build scalable React applications with proven
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="browseby_topic">
+            <h1>Browse By Topic</h1>
+            <h5>Find your next read by area of expertise</h5>
+            <div data-aos = "fade-up">
+                <div class="container text-center">
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 gy-4">
+                        <div class="col" data-aos-delay="100">
+                            <button class="webdev">
+                                <i class="bi bi-globe"></i>
+                                <span><br>Web Development</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="200">
+                            <button class="ML">
+                                <i class="bi bi-motherboard"></i>
+                                <span><br>Machine Learning</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="300">
+                            <button class="devops">
+                                <i class="bi bi-hdd-stack"></i>
+                                <span><br>Dev Ops</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="400">
+                            <button class="cloudcomp">
+                                <i class="bi bi-cloud"></i>
+                                <span><br>Cloud Computing</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="500">
+                            <button class="security_btn">
+                                <i class="bi bi-shield"></i>
+                                <span><br>Security</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="600">
+                            <button class="data_science">
+                                <i class="bi bi-bar-chart-line"></i>
+                                <span><br>Data Science</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="700">
+                            <button class="mobile_development">
+                                <i class="bi bi-phone"></i>
+                                <span><br>Mobile Development</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="800">
+                            <button class="system_design">
+                                <i class="bi bi-diagram-3"></i>
+                                <span><br>System Design</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="900">
+                            <button class="programming">
+                                <i class="bi bi-code-slash"></i>
+                                <span><br>Programming Languages</span>
+                            </button>
+                        </div>
+                        <div class="col" data-aos-delay="1000">
+                            <button class="databases">
+                                <i class="bi bi-database"></i>
+                                <span><br>Databases</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="allbooks">
+            <h1>All Books</h1>
+            <h5>24 books Available</h5>
+            
+            <div class="search_bar_elements">
+                <div class="search_book">
+                        <i class="bi bi-search"></i>
+                        <input type="text" name="" id="" placeholder="Search by title, author, or topic...">
+                </div>
+
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">All</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">E-Book</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio3">Physical</label>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle relevance_btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span><i class="bi bi-sliders2"></i></span> Relevance
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container text-center allbooks_container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 gy-4">
+                    <div class="col" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/rust.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Rust Programming Language</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/flutter.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flutter in Practice</h5>
+                                <p class="card-text">Eric Windmill <br>
+                                    Build beautiful, natively compiled mobile apps from a...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/kubernetes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kubernetes in Action</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                               <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/react_design.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React Design Patterns</h5>
+                                <p class="card-text">Carlos Santana <br>
+                                    Build scalable React applications with proven
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="250">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/rust.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Rust Programming Language</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/flutter.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flutter in Practice</h5>
+                                <p class="card-text">Eric Windmill <br>
+                                    Build beautiful, natively compiled mobile apps from a...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="350">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/kubernetes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kubernetes in Action</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/react_design.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React Design Patterns</h5>
+                                <p class="card-text">Carlos Santana <br>
+                                    Build scalable React applications with proven
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="450">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/rust.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Rust Programming Language</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="500">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/flutter.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Flutter in Practice</h5>
+                                <p class="card-text">Eric Windmill <br>
+                                    Build beautiful, natively compiled mobile apps from a...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col" data-aos="fade-up" data-aos-delay="550">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/kubernetes.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Kubernetes in Action</h5>
+                                <p class="card-text">Steve Klabnik & Carol Nichols <br>
+                                    The official guide to Rust, a systems programming...
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card" style="width: 18rem;">
+                            <img src="assets/images/react_design.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">React Design Patterns</h5>
+                                <p class="card-text">Carlos Santana <br>
+                                    Build scalable React applications with proven
+                                </p>
+                                <a href="#" class="btn btn-primary"><i class="bi bi-cart">Add</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example" class="mt-5">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item active">
+                    <a class="page-link" aria-current="page">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="">2</a></li>
+                    <li class="page-item"><a class="page-link" href="">3</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="author_gradient_section">
+            <div class="for_authors">
+                <h1>Share Your Knowledge with the <br>
+                    World
+                </h1> 
+                <h5>Got a technical book in you? Join our community of published authors and <br>
+                        reach developers worldwide. 
+                </h5> 
+                <i class="bi bi-check-circle"></i><span>Reach thousands of tech professionals <br></span>
+                <i class="bi bi-check-circle"></i><span>Keep 80% of your royalties <br></span>
+                <i class="bi bi-check-circle"></i><span>Professional editorial support <br></span>
+                <i class="bi bi-check-circle"></i><span>Print and e-book distribution <br></span>
+                <button type="button" class="btn btn-primary btn start_publishing_btn">
+                    <span>Start Publishing</span>
+                </button>
+            </div>
+
+        </div>
+       
+        <div class="footer_part">
+            <div class="logo_footer">
+                <img src="assets/logo/gocourse_logo.png" alt="">
+                <span style="color: gray;"><br>The definitive platform for discovering and <br>
+                    publishing tech books.</span>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <h5>Explore</h5>
+                        <p><a href="">Browse Books</a></p>
+                        <p><a href="">New Releases</a></p>
+                        <p><a href="">Bestsellers</a></p>
+                        <p><a href="">Topics</a></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Authors</h5>
+                        <p><a href="">Publish a Book</a></p>
+                        <p><a href="">Author Guidelines</a></p>
+                        <p><a href="">Royalties</a></p>
+                        <p><a href="">Resources</a></p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5>Company</h5>
+                        <p><a href="">About Us</a></p>
+                        <p><a href="">Blog</a></p>
+                        <p><a href="">Careers</a></p>
+                        <p><a href="">Contact</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="credits">
+            <span>© 2026 GoCourse. All rights reserved.</span>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+
+
+    function toggleSearch(){
+        const searchInput = document.querySelector(".header_search_input");
+
+        if(searchInput.classList.contains("active")){
+            searchInput.classList.remove("active");
+            searchInput.blur();
+        }else{
+            searchInput.classList.add("active");
+            searchInput.focus();
+        }
+    }
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
